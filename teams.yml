@@ -65,6 +65,16 @@ amqp:
           request: consultant_removed_team
         finished:
           request: consultant_finished_team
+  projects:
+    queue:
+      closed:
+        request: close_project_queue
+    exchange:
+      closed:
+        project: close_project_exchange
+    key:
+      closed:
+        request: close_project_key
       
 clients:
   service: CLIENTS
