@@ -36,6 +36,16 @@ management:
       allowed-methods: GET,POST,PUT
 
 amqp:
+  projects:
+    queue:
+      closed:
+        request: project_closed_teams_response_queue
+    exchange:
+      closed:
+        project: projects_closed
+    key:
+      closed:
+        request: project_closed        
   events:
     queue:
       created:
