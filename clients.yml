@@ -56,7 +56,8 @@ amqp:
         request: client_updated
       removed:
         request: client_removed
-      updated-projects: client_updated_projects
+      updated-projects: 
+        request: client_updated_projects
   events:
     queue:
       created:
