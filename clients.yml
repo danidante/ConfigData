@@ -39,6 +39,16 @@ management:
       allowed-methods: GET,POST
       
 amqp:
+  projects:
+    queue:
+      closed:
+        request: project_closed_clients_response_queue
+    exchange:
+      closed:
+        project: projects_closed
+    key:
+      closed:
+        request: project_closed        
   clients:
     exchange:
       created:
@@ -49,6 +59,8 @@ amqp:
         client: clients_removed
       updated-projects:
         client: clients_updated_projects
+      closed-project:
+        client: clients_closed_project
     key:
       created:
         request: client_created
@@ -58,6 +70,8 @@ amqp:
         request: client_removed
       updated-projects: 
         request: client_updated_projects
+      closed-project:
+        request: client_closed_project
   events:
     queue:
       created:
