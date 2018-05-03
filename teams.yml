@@ -60,6 +60,8 @@ amqp:
           team: teams_consultant_removed
         finished:
           team: teams_consultant_finished
+      closed-from-project:
+        team: teams_closed_from_project
     key:
       created:
         request: team_created
@@ -74,6 +76,8 @@ amqp:
           request: consultant_removed_team
         finished:
           request: consultant_finished_team
+      closed-from-project:
+        request: team_closed_from_project
       
 clients:
   service: CLIENTS
