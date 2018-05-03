@@ -65,6 +65,8 @@ amqp:
         consultant: consultants_removed
       updated-allocation:
         consultant: consultants_updated_allocation
+      closed-allocation-project:
+        consultant: consultants_closed_allocation_project
     key:
       created:
         request: consultant_created
@@ -74,6 +76,8 @@ amqp:
         request: consultant_removed
       updated-allocation:
         request: consultant_updated_allocation
+      closed-allocation-project:
+        request: consultant_closed_allocation_project
   events:
     queue:
       created:
