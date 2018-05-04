@@ -78,6 +78,8 @@ amqp:
         consultant: consultants_closed_allocation_project
       inactivated:
         consultant: consultants_inactivated
+      activated:
+        consultant: consultants_activated
     key:
       created:
         request: consultant_created
@@ -91,6 +93,8 @@ amqp:
         request: consultant_closed_allocation_project
       inactivated:
         request: consultant_inactivated
+      activated:
+        request: consultant_activated
   events:
     queue:
       created:
