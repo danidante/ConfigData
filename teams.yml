@@ -80,6 +80,8 @@ amqp:
           team: teams_consultant_removed
         finished:
           team: teams_consultant_finished
+        inactivated:
+          team: teams_consultant_inactivated
       closed-from-project:
         team: teams_closed_from_project
     key:
@@ -96,6 +98,8 @@ amqp:
           request: consultant_removed_team
         finished:
           request: consultant_finished_team
+        inactivated:
+          request: consultant_inactivated_team
       closed-from-project:
         request: team_closed_from_project
       
