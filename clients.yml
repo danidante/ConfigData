@@ -77,13 +77,19 @@ amqp:
         request: project_created_clients_response_queue
       closed:
         request: project_closed_clients_response_queue
+      opened:
+        request: project_opened_clients_response_queue
     exchange:
       created:
         project: projects_created
       closed:
         project: projects_closed
+      opened:
+        project: projects_opened
     key:
       created:
         request: project_created
       closed:
         request: project_closed
+      opened:
+        request: project_opened
