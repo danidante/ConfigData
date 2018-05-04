@@ -36,6 +36,16 @@ management:
       allowed-methods: GET,POST,PUT
 
 amqp:
+  consultants:
+    queue:
+      inactivated:
+        request: consultants_inactivated_teams_response_queue
+    exchange:
+      inactivated:
+        consultant: consultants_inactivated
+    key:
+      inactivated:
+        request: consultant_inactivated
   projects:
     queue:
       closed:
