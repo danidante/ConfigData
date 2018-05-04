@@ -68,6 +68,8 @@ amqp:
         project: projects_updated_consultant
       updated-team:
         project: projects_updated_team
+      added-team:
+        project: projects_added_team
     key:
       created:
         request: project_created
@@ -78,7 +80,9 @@ amqp:
       updated-consultant:
         request: project_updated_consultant
       updated-team:
-        request: project_updated_team  
+        request: project_updated_team
+      added-team:
+        request: project_added_team
   teams:
     queue:
       created:
