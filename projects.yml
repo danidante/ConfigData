@@ -46,6 +46,15 @@ logging:
     org.springframework.data.mongodb.core.ReactiveMongoTemplate=DEBUG  
 
 amqp:
+  consultants:
+    queue:
+      inactivated:
+        request: consultants_inactivated_teams_response_queue
+    exchange:
+      inactivated:
+        consultant: consultants_inactivated
+    key:
+      inactivated: consultant_inactivated
   events:
     queue:
       created:
