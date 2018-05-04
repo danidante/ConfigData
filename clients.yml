@@ -51,6 +51,8 @@ amqp:
         client: clients_updated_projects
       closed-project:
         client: clients_closed_project
+      opened-project:
+        client: clients_opened_project
     key:
       created:
         request: client_created
@@ -62,6 +64,8 @@ amqp:
         request: client_updated_projects
       closed-project:
         request: client_closed_project
+      opened-project:
+        request: client_opened_project
   events:
     queue:
       created:
