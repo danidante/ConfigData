@@ -62,6 +62,8 @@ amqp:
         project: projects_created
       closed:
         project: projects_closed
+      opened:
+        project: projects_opened
       updated:
         project: projects_updated
       updated-consultant:
@@ -75,6 +77,8 @@ amqp:
         request: project_created
       closed:
         request: project_closed
+      opened:
+        request: project_opened
       updated:
         request: project_updated
       updated-consultant:
