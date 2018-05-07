@@ -46,6 +46,15 @@ logging:
     org.springframework.data.mongodb.core.ReactiveMongoTemplate=DEBUG  
 
 amqp:
+  clients:
+    queue:
+      updated:
+        request: clients_updated_projects_response_queue
+    exchange:
+      updated:
+        client: clients_updated
+    key:
+      request: client_updated
   consultants:
     queue:
       inactivated:
