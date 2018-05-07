@@ -54,7 +54,8 @@ amqp:
       inactivated:
         consultant: consultants_inactivated
     key:
-      inactivated: consultant_inactivated
+      inactivated: 
+        request: consultant_inactivated
   events:
     queue:
       created:
