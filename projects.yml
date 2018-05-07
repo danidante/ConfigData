@@ -49,7 +49,7 @@ amqp:
   consultants:
     queue:
       inactivated:
-        request: consultants_inactivated_teams_response_queue
+        request: consultants_inactivated_projects_response_queue
     exchange:
       inactivated:
         consultant: consultants_inactivated
