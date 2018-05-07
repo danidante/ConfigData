@@ -93,6 +93,8 @@ amqp:
         project: projects_added_team
       inactivated-consultant:
         project: projects_inactivated_consultant
+      updated-client:
+        project: projects_updated_client
     key:
       created:
         request: project_created
@@ -110,6 +112,8 @@ amqp:
         request: project_added_team
       inactivated-consultant:        
         request: project_inactivated_consultant
+      updated-client:
+        request: project_updated_client
   teams:
     queue:
       created:
