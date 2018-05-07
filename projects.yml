@@ -54,7 +54,8 @@ amqp:
       updated:
         client: clients_updated
     key:
-      request: client_updated
+      updated:
+        request: client_updated
   consultants:
     queue:
       inactivated:
