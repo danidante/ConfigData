@@ -80,15 +80,15 @@ zuul:
     socketTimeoutMillis: 600000
   
 hystrix:
-    command:
-        default:
-            execution:
-                isolation:
-                    thread:
-                        timeoutInMilliseconds: 600000
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 600000
                         
-            timeout:
-              enabled: true     
+  timeout:
+    enabled: true     
               
 ribbon:
   ReadTimeout: 600000
