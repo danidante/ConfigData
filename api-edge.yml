@@ -82,22 +82,6 @@ zuul:
     eager-load:
       enabled: true    
   
-hystrix:
-  command:
-    default:
-      execution:
-        isolation:
-          strategy:
-            thread:
-              timeoutInMilliseconds: 600000
-                        
-  timeout:
-    enabled: false     
-              
-ribbon:
-  ReadTimeout: 600000
-  ConnectTimeout: 200000   
-
 ---
 spring:
   profiles: docker
