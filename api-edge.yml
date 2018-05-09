@@ -76,8 +76,8 @@ zuul:
       sensitiveHeaders: 
       serviceId: leaders
   host:
-    connect-timeout-millis: 100000
-    socket-timeout-millis: 100000
+    connectTimeoutMillis: 600000
+    socketTimeoutMillis: 600000
   
 hystrix:
     command:
@@ -91,7 +91,7 @@ hystrix:
               enabled: false     
               
 ribbon:
-  ReadTimeout: 10000
+  ReadTimeout: 600000
   ConnectTimeout: 200000   
 
 ---
