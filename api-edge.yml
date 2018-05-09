@@ -91,7 +91,7 @@ hystrix:
             timeoutInMilliseconds: 600000
                         
   timeout:
-    enabled: true     
+    enabled: false     
               
 ribbon:
   ReadTimeout: 600000
