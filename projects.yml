@@ -157,12 +157,4 @@ amqp:
         removed:
           request: consultant_removed_team
         finished:
-          request: consultant_finished_team
-          
-hystrix:
-  command:
-    default:
-      execution:
-        isolation:
-          thread:
-            timeoutInMilliseconds: 600000          
+          request: consultant_finished_team   
