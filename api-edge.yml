@@ -75,6 +75,10 @@ zuul:
       path: /api/v1/leaders/**
       sensitiveHeaders: 
       serviceId: leaders
+    auths:
+      path: /api/v1/auths/**
+      sensitiveHeaders: 
+      serviceId: auths
   host:
     connectTimeoutMillis: 600000
     socketTimeoutMillis: 600000
