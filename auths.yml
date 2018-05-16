@@ -35,3 +35,6 @@ management:
       allowed-origins: "*"
       allowed-methods: GET,POST
       
+leaders:
+  service: LEADERS      
+      
