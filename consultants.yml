@@ -80,6 +80,8 @@ amqp:
         consultant: consultants_inactivated
       activated:
         consultant: consultants_activated
+      team-leader-changed:
+        consultant: consultants_team_leader_changed
     key:
       created:
         request: consultant_created
@@ -95,6 +97,8 @@ amqp:
         request: consultant_inactivated
       activated:
         request: consultant_activated
+      team-leader-changed:
+        request: consultant_team_leader_changed
   events:
     queue:
       created:
