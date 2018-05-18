@@ -66,12 +66,12 @@ amqp:
       inactivated:
         consultant: consultants_inactivated
       team-leader-changed:
-        consultant: consultants_changed_teamleader
+        consultant: consultants_team_leader_changed
     key:
       inactivated: 
         request: consultant_inactivated
       team-leader-changed:
-        request: consultant_changed_teamleader
+        request: consultant_team_leader_changed
   events:
     queue:
       created:
