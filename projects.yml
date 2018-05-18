@@ -60,12 +60,18 @@ amqp:
     queue:
       inactivated:
         request: consultants_inactivated_projects_response_queue
+      team-leader-changed:
+        request: consultants_changed_teamleader_projects_response_queue
     exchange:
       inactivated:
         consultant: consultants_inactivated
+      team-leader-changed:
+        consultant: consultants_changed_teamleader
     key:
       inactivated: 
         request: consultant_inactivated
+      team-leader-changed:
+        request: consultant_changed_teamleader
   events:
     queue:
       created:
@@ -96,6 +102,8 @@ amqp:
         project: projects_inactivated_consultant
       updated-client:
         project: projects_updated_client
+      changed-consultant-teamleader:
+        project: projects_changed_consultant_teamleader        
     key:
       created:
         request: project_created
@@ -115,6 +123,8 @@ amqp:
         request: project_inactivated_consultant
       updated-client:
         request: project_updated_client
+      changed-consultant-teamleader:
+        request: project_changed_consultant_teamleader        
   teams:
     queue:
       created:
