@@ -40,12 +40,18 @@ amqp:
     queue:
       inactivated:
         request: consultants_inactivated_teams_response_queue
+      team-leader-changed:
+        request: consultants_changed_teamleader_teams_response_queue
     exchange:
       inactivated:
         consultant: consultants_inactivated
+      team-leader-changed:
+        consultant: consultants_team_leader_changed        
     key:
       inactivated:
         request: consultant_inactivated
+      team-leader-changed:
+        request: consultant_team_leader_changed
   projects:
     queue:
       closed:
@@ -82,6 +88,8 @@ amqp:
           team: teams_consultant_finished
         inactivated:
           team: teams_consultant_inactivated
+        changed-teamleader:
+          team: teams_consultant_changed_teamleader
       closed-from-project:
         team: teams_closed_from_project
     key:
@@ -100,6 +108,8 @@ amqp:
           request: consultant_finished_team
         inactivated:
           request: consultant_inactivated_team
+        changed-teamleader:
+          request: consultant_changed_teamleader_team
       closed-from-project:
         request: team_closed_from_project
       
