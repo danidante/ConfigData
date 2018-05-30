@@ -98,6 +98,8 @@ amqp:
           team: teams_consultant_changed_teamleader
       closed-from-project:
         team: teams_closed_from_project
+      changed-owner-from-project:
+        team: teams_changed_owner_from_project
     key:
       created:
         request: team_created
@@ -118,6 +120,8 @@ amqp:
           request: consultant_changed_teamleader_team
       closed-from-project:
         request: team_closed_from_project
+      changed-owner-from-project:
+        request: team_changed_owner_from_project
       
 clients:
   service: CLIENTS
