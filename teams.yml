@@ -56,12 +56,18 @@ amqp:
     queue:
       closed:
         request: project_closed_teams_response_queue
+      changed-onwer:
+        request: project_changed_owner_team_response_queue
     exchange:
       closed:
         project: projects_closed
+      changed-owner:
+        project: projects_changed_owner        
     key:
       closed:
-        request: project_closed        
+        request: project_closed
+      changed-owner:
+        request: project_changed_owner
   events:
     queue:
       created:
