@@ -41,6 +41,9 @@ skills:
 sites:
   service: SITES
   
+leaders:
+  service: LEADERS
+  
 logging:
   level:
     org.springframework.data.mongodb.core.ReactiveMongoTemplate=DEBUG  
