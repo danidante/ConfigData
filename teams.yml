@@ -56,7 +56,7 @@ amqp:
     queue:
       closed:
         request: project_closed_teams_response_queue
-      changed-onwer:
+      changed-owner:
         request: project_changed_owner_team_response_queue
     exchange:
       closed:
