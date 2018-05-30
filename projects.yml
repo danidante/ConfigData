@@ -106,7 +106,10 @@ amqp:
       updated-client:
         project: projects_updated_client
       changed-consultant-teamleader:
-        project: projects_changed_consultant_teamleader        
+        project: projects_changed_consultant_teamleader
+      changed-owner:
+        project: projects_changed_owner
+        
     key:
       created:
         request: project_created
@@ -127,7 +130,9 @@ amqp:
       updated-client:
         request: project_updated_client
       changed-consultant-teamleader:
-        request: project_changed_consultant_teamleader        
+        request: project_changed_consultant_teamleader     
+      changed-owner:
+        request: project_changed_owner
   teams:
     queue:
       created:
